@@ -1,6 +1,6 @@
 const listRepos = async (username) => {
   const repos = await fetch(
-    `http://api.github.com/users/${username}/repos?type=owner&sort=updated`
+    `https://api.github.com/users/${username}/repos?type=owner&sort=updated`
   )
     .then((res) => res.json())
     .catch(console.error);
